@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Lab2</string>
+    <string name="toast_message">Le label a été mis à jour.</string>
+</resources>
