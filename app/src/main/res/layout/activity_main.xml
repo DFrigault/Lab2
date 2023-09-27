@@ -1,66 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/root_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:columnCount="2"
     android:padding="16dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/tv_love_android"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_columnSpan="1"
+        android:layout_gravity="fill_horizontal"
+        android:text="I love Android"
+        android:textSize="30dp" />
 
-        <TextView
-            android:id="@+id/tv_love_android"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="I love Android"
-            android:textSize="30dp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
+    <ImageView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_columnSpan="1"
+        android:src="@drawable/flag" />
 
-        <Switch
-            android:id="@+id/switch_on_off"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Switch on/off" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/flag" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
+    <Switch
+        android:id="@+id/switch_on_off"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_columnSpan="1"
+        android:layout_gravity="fill_horizontal"
+        android:text="Switch on/off" />
 
-        <Button
-            android:id="@+id/btn_press_me"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Press Me" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:visibility="invisible"
+        android:src="@drawable/flag" />
 
-        <CheckBox
-            android:id="@+id/check_this_out"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Check this out!" />
+    <Button
+        android:id="@+id/btn_press_me"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:layout_gravity="fill_horizontal"
+        android:text="Press Me" />
 
-    </LinearLayout>
+    <CheckBox
+        android:id="@+id/check_this_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:text="Check this out!" />
 
     <EditText
         android:id="@+id/edit_love_android"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
         android:hint="I love Android" />
-</LinearLayout>
+
+</GridLayout>
